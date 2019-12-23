@@ -1,0 +1,76 @@
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="Menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        html{
+            background-image: url('Background/qhc.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        body {
+            font-family: "Times New Roman", Georgia, Serif, sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    </style>
+    <link rel="icon" href="Logo/b&flogo.png">
+    <title> Blue & Fly Asian Kitchen </title>
+
+</head>
+<div class="bf-top" >
+    <div class="bf-bar bf-padding bf-card" style="letter-spacing:4px; background-color: white;">
+            <a href="Blue&Fly.html"><img class="bf-bar-item" src="Logo/blue&Fly_White.jpeg" alt="" width="60" height="42"></a>
+            <a href="Blue&Fly.html" class="bf-bar-item bf-button" >Blue & Fly Asian Kitchen</a>
+    </div>
+</div>
+
+<body>
+
+<div id="app">
+    <div class="title-container" style="margin-top:90px;">
+        <div>
+            <img class="bf-bar-item" src="Logo/menulogo.png" alt="" width="200" height="120">
+        </div>
+        <div class="filters" style="margin-top:20px;">
+            <a style="font-size: 21px">American-Chinese Style: </a><span class="filter" v-bind:class="{ active: currentFilter === 'Appetizers' }" v-on:click="setFilter('Appetizers')">Appetizers</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Starters' }" v-on:click="setFilter('Starters')">Starters</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Entrees' }" v-on:click="setFilter('Entrees')">Entrees</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Favorites' }" v-on:click="setFilter('Favorites')">B & F's Favorites</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Old Fashions' }" v-on:click="setFilter('Old Fashions')">B & F's Old Fashions</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Vegetarian' }" v-on:click="setFilter('Vegetarian')">Vegetarian</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Dessert(limited offer)' }" v-on:click="setFilter('Dessert(limited offer)')">Dessert(limited offer)</span>
+            <br><br><br>
+            <a style="font-size: 21px">Traditional-Chinese Style: </a><span class="filter" v-bind:class="{ active: currentFilter === 'Appetizers(Salad)' }" v-on:click="setFilter('Appetizers(Salad)')">Appetizers(Salad)</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Vegetables' }" v-on:click="setFilter('Vegetables')">Vegetables</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Seafood' }" v-on:click="setFilter('Seafood')">Seafood</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Beef, Chiken, Pork, Lamb' }" v-on:click="setFilter('Beef, Chiken, Pork, Lamb')">Beef, Chiken, Pork, Lamb</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Casserole, Noodle, Rice' }" v-on:click="setFilter('Casserole, Noodle, Rice')">Casserole, Noodle, Rice</span>
+            <span class="filter" v-bind:class="{ active: currentFilter === 'Soup' }" v-on:click="setFilter('Soup')">Soup</span>
+        </div>
+    </div>
+
+    <transition-group class="projects" name="projects" >
+        <div class="project" v-if="currentFilter === project.category || currentFilter === 'Chinese BBQ'" v-bind:key="project.category" v-for="(project, idx) in projects" >
+            <div class="project-image-wrapper">
+                <img class="project-image" :src="project.image" @click="nutrition(idx)" type="button" height="684" width="456">
+                <div class="gradient-overlay" @click="nutrition(idx)"></div>
+            </div>
+        </div>
+    </transition-group>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="Menu.js"></script>
+</body>
+</html>

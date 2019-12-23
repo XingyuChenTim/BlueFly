@@ -1,0 +1,363 @@
+<!-- This html is for Blue & Fly Visting purpose and the editors are: Xinyu Chen; Yi Liang, Zexi Xing-->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link rel="stylesheet" href="Blue&Fly.css">
+
+    <style>
+        html{
+            background-image: url('Background/qhc.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        body {
+            font-family: "Times New Roman";
+        }
+        h1, h2, h3, h4, h5, h6{
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+
+        p{
+
+            font-size: 3px;
+        }
+
+        .tab {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .slideshow-container {
+            max-width: 1600px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+
+        .text {
+            color: white;
+            background:linear-gradient(to bottom, #79bbff 5%, #5ca1e6 100%);
+            background-color: #a9cff5;
+            font-size: 25px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 350px;
+            width: 100%;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+
+        .dot {
+            cursor: pointer;
+            height: 0px;
+            width: 0px;
+            margin: 0 2px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        .Button {
+            text-align:center!important;
+            box-shadow: 0px 0px 0px 0px #1564ad;
+            background:linear-gradient(to bottom, #79bbff 5%, #a9cff5 100%);
+            background-color:#79bbff;
+            border-radius:10px;
+            border:0px solid #337bc4;
+            display:block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:17px;
+            font-weight:bold;
+            padding:8px 24px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #528ecc;
+        }
+        .TButton {
+            text-align:center!important;
+            box-shadow: 0px 0px 0px 0px #1564ad;
+            color: #79bbff;
+            font-family:Arial;
+            font-size:23px;
+            font-weight:bold;
+            padding:9px 10px;
+            text-decoration:none;
+            text-shadow:0px 0px 2px #528ecc;
+            display:block;
+
+        }
+        .Hour {
+            text-align:center!important;
+            color: black;
+            font-family:Arial;
+            font-size:25px;
+            font-weight:bold;
+            padding:9px 14px;
+            text-decoration:none;
+            display:block;
+
+        }
+        .Button:hover {
+            background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+            background-color:#378de5;
+        }
+
+        .Button:active {
+            position:relative;
+            top:1px;
+        }
+
+
+    </style>
+
+    <link rel="icon" href="Logo/b&flogo.png">
+    <title> Blue & Fly Asian Kitchen </title>
+
+</head>
+<body>
+
+
+
+<div class="bf-top" >
+
+    <div class="bf-bar bf-padding bf-card" style="letter-spacing:4px; background-color: white;">
+
+	<a href="Blue&Fly.html">
+   	<img class="bf-bar-item" src="Logo/blue&Fly_White.jpeg" alt="" width="60" height="42">
+   </a>
+    <a href="Blue&Fly.html" class="bf-bar-item bf-button" >Blue & Fly Asian Kitchen</a>
+
+        <div class="bf-right bf-hide-small" >
+            <a href="#about" class="bf-bar-item bf-button" style="padding:8px 30px;">About Blue&Fly </a>
+            <a href="#menu" class="bf-bar-item bf-button" style="padding:8px 30px;">Menu</a>
+            <a href="#contact" class="bf-bar-item bf-button"style="padding:8px 30px;">Contact Us </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Page content -->
+
+<header class="bf-display-container bf-content bf-wide" style="max-width:100%; margin-top: 54px;" id="home;">
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <a href="https://www.omaha.com/entertainment/review-new-chinese-restaurant-blue-fly-holds-lots-of-the/article_52355b22-7351-53d9-87d4-8fc7a56035cf.html" target="_blank">
+            <img src="News/Title_cover.png" style="width:100%;height: 350px;">
+        </a>
+        <div class="text">Publisher: Omaha World Herald</div>
+        <div class="dot"></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <a href="https://omahamagazine.com/articles/tag/blue-and-fly-asian-kitchen/" target="_blank">
+            <img src="News/Title_cover1.jpg" style="width:100%; height: 350px;">
+        </a>
+        <div class="text">Publisher: The Daily Meal </div>
+        <div class="dot"></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <a href="https://www.thedailymeal.com/eat/best-chinese-restaurant-every-state-gallery/slide-27" target="_blank">
+            <img src="News/Title_cover2.jpg" style="width:100%; height: 350px;">
+        </a>
+        <div class="text">Publisher: Omaha Magazine</div>
+        <div class="dot"></div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+
+
+</header>
+
+
+<div class="bf-content" style="max-width:1200px;">
+
+
+    <div class="bf-row bf-padding-64" id="about">
+        <div class="bf-col m6 bf-padding-large bf-hide-small" style="margin-left:-40px; margin-top: 70px;">
+            <a href="AboutUs.html">
+                <img src="Cover/store.jpg" class="bf-round bf-opacity-min" alt="Table Setting" width="100%" height="400" >
+            </a>
+
+        </div>
+
+
+        <div class="bf-col m6 bf-padding-large" style="margin-left: 40px;">
+
+            <a href="AboutUs.html" class="TButton">
+                About Blue & Fly
+            </a>
+            <p class="bf-large"><span class="tab"></span>What’s really exciting about the little restaurant that opened last September is that it has a lot of dishes you won’t recognize, dishes that you’ve likely never had before. And that’s when things get fun.</p>
+            <p class="bf-large"><span class="tab"></span>Owner Yue “Joe” Cong told me after my three visits that he decided on that menu — a mix of familiar and unfamiliar — for very specific reasons. He knew that after working for a number of years at restaurant in U.S., he wanted to focus on what he calls “authentic” Chinese food, dishes he grew up eating in China before he moved here at age 21, and dishes he’d eaten outside of Omaha, in cities such as New York and Chicago. (Author: Sarah Baker Hannsen)</p>
+        </div>
+    </div>
+
+
+    <!-- Menu Section -->
+    <div class="bf-row bf-padding-64" id="menu">
+        <div class="bf-col l6 bf-padding-large" style="margin-left: -30px;">
+            <a href="Menu.html" class="TButton">
+                Our Menu
+            </a>
+            <br><br>
+            <h4 class="bf-text-grey bf-center">Entrees</h4> <br>
+            <h4 class="bf-text-grey bf-center">Vegetables</h4><br>
+            <h4 class="bf-text-grey bf-center">Seafood</h4><br>
+            <h4 class="bf-text-grey bf-center">Beef,Pork,Chicken,Lamb</h4><br>
+
+            <h4 class="bf-text-grey bf-center">Casserole,Noodle,Rice,</h4><br>
+            <h4 class="bf-text-grey bf-center">Soup</h4><br>
+            <h4 class="bf-text-grey bf-center">Chinese BBQ</h4><br>
+            <h4 class="bf-text-grey bf-center">Dessert</h4>
+            <br>
+
+        </div>
+
+        <div class="bf-col l6 bf-padding-large">
+            <a href="Menu.html" >
+                <img src="Cover/SZY.jpg" class="bf-round bf-opacity-min" alt="Menu" width="550" height="600" style="max-width:100%; margin-left:50px; margin-top: 80px;">
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="bf-row bf-padding-64" id="contact">
+
+        <div class="bf-col m6 bf-padding-large bf-hide-small" style="margin-left:-40px; margin-top: 50px;">
+            <a href="https://www.google.com/maps/place/Blue+%26+Fly+Asian+Kitchen/@41.2533317,-96.0226319,15z/data=!4m5!3m4!1s0x0:0x3dff7a3c222ec308!8m2!3d41.2533317!4d-96.0226319" target="_blank">
+                <img src="Cover/address.jpg" class="bf-round bf-opacity-min" alt="Table Setting" width="100%" height="600" >
+            </a>
+
+
+
+        </div>
+
+        <div class="bf-col m6 bf-padding-large" style="margin-left: 40px;">
+            <h1 class="TButton"> Opening Hours & Stay Connected</h1>
+
+            <div class="Hour" style= "text-align:center; font-weight: bold;" >
+                <p class="bf-large"> Mon: Closed</p>
+                <p class="bf-large"> Tue-Thu: 11am ~ 10pm</p>
+                <p class="bf-large"> Fri-Sat: 11am ~ 10:30pm</p>
+                <p class="bf-large"> Sun: 12pm ~ 10pm</p>
+                <p class="bf-large"> Holiday Opening Hours are flexible </p>
+
+
+
+            </div>
+            <a href="https://www.google.com/maps/place/Blue+%26+Fly+Asian+Kitchen/@41.2533317,-96.0226319,15z/data=!4m5!3m4!1s0x0:0x3dff7a3c222ec308!8m2!3d41.2533317!4d-96.0226319" target="_blank"class="Button">Driving Address, 721 S 72nd St suite 111, Omaha, NE, 68114 </a></b>
+
+            <p class="bf-large"><a href="tel:402-504-6545" class="Button">You can also contact us by phone 402-504-6545</a> </p>
+
+            <a href="https://www.facebook.com/BlueandFly" class="Hour" target="_blank">
+                <img src="Logo/facebook.jpg" alt="Table Setting" width="70" height="70" >
+                FaceBook
+            </a>
+            <a href="https://www.yelp.com/biz/blue-and-fly-asian-kitchen-omaha?osq=blue+and+fly" class="Hour"target="_blank">
+                <img src="Logo/yelp.jpg" alt="Table Setting" width="50" height="50" >
+                Yelp!
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="bf-center bf-padding-32" style="margin-top:;">
+    <b style="font-size: 20px;"><i>&copy;Founded in 2015 Blue&Fly HomePage Copyright</i></b>
+</footer>
+
+</body>
+</html>
