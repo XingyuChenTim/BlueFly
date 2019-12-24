@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+	<link href="css/need.css" rel="stylesheet" />
+	<link href="shetland.css" media="screen and (max-device-width: 480px)" rel="stylesheet" type="text/css" />
+	<style type="text/css">html{
+	background-image: url('image/QHC_final2.jpg');
+ 	background-repeat: no-repeat;
+  	background-attachment: fixed;  
+  	background-size: cover;
+  	background-length: 100%;
+}
+body {
+	font-family: "Times New Roman";
+	}
+h1, h2, h3, h4, h4, h6{
+  font-family: "Playfair Display";
+  letter-spacing: 1px;
+  line-height: 150%;
+}
+
+p{
+	
+	font-size: 1%;
+}
+
+.tab {
+        display: inline-block; 
+        margin-left: 20%; 
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -10%;
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: white;
+  background:linear-gradient(to bottom, #79bbff 5%, #5ca1e6 100%);
+  background-color: #a9cff5;
+  font-size: 130%;
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 0px;
+  width: 0px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media (max-width:620px) and (min-width:320px){
+  
+    .bf-row{
+        text-align:center!important;
+        margin-left: 20%;
+        margin-right: auto;
+    }
+    .bf-padding-32{
+        width:400px;
+         margin-left: -100px;
+        margin-right: auto;
+    }
+    .bf-round{
+         display: fixed;
+         width: 370px;
+         margin-left: auto;
+        margin-right: auto;
+    }
+    .menu-pic{
+        display: inline-block;
+        width:400px;
+        height:200%;
+        margin-top: 200px;
+    }
+    .bf-spe{
+        display: inline-block;
+        width:100px;
+        margin-top:10%;
+    }
+    .mySlides{
+        margin-top:26%;
+    }
+    .text {
+     color: white;
+      background-color: #a9cff5;
+      font-size: 100%;
+      position: absolute;
+      top: 68%;
+      width: 100%;
+      padding: 1px -10px;
+      font-family: sans-serif;
+    }
+    .menu-left-bold{
+         margin-left: 70px;
+    }
+    .menu-left1{
+        margin-left: 90px;
+    }
+    .menu-left2{
+        margin-left: 110px;
+    }
+    .menu-left3{
+        margin-left: 110px;
+    }
+    .menu-left4{
+        margin-left: 59px;
+    }
+    .menu-left5{
+        margin-left: 35px;
+    }
+    .menu-left6{
+        margin-left: 100px;
+    }
+    .menu-left7{
+        margin-left: 55px;
+    }
+    
+    .menu-right-bold{
+         margin-right: 55px;
+    }
+    .menu-right1{
+         margin-right: 55px;
+    }
+    .menu-right2{
+         margin-right: 120px;
+    }
+    .menu-right3{
+         margin-right: 90px;
+    }
+    .menu-right4{
+         margin-right: 25px;
+    }
+    .menu-right5{
+        margin-right: 95px;
+    }
+    .menu-right6{
+         margin-right: 20px;
+    }
+  
+    .l-inblock{
+        display:block;
+    }
+    .r-inblock{
+        display:block;
+    }
+    .Button {
+    margin-left:-65px;
+    margin-right: 20px;
+	background:linear-gradient(to bottom, #79bbff 5%, #a9cff5 100%);
+	background-color:#79bbff;
+	border-radius:10px;
+	display:block;
+	width: 300px;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:100%;
+	font-weight:bold;
+	text-decoration:none;
+    }
+    .bf-contact{
+        display: block;
+        width:450px;
+        height:200%;
+        margin-left: -27%;
+    }
+}
+
+
+.Button {
+	text-align:center!important;
+	background:linear-gradient(to bottom, #79bbff 5%, #a9cff5 100%);
+	background-color:#79bbff;
+	border-radius:10px;
+	border:0px solid #337bc4;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:100%;
+	font-weight:bold;
+	text-decoration:none;
+}
+.TButton {
+	text-align:center!important;
+	color: #79bbff;
+	font-family:Arial;
+	font-size:200%;
+	font-weight:bold;
+	text-decoration:none;
+	
+}
+.Hour {
+	text-align:center!important;
+	color: black;
+	font-family:Arial;
+	font-size:100%;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	
+}
+.Button:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+
+.Button:active {
+	position:relative;
+	top:1px;
+}
+
+#rcorners {
+    border-radius: 50px 50px 50px 50px;
+}
+.menu-right1{
+    display: inline-block;
+    float:right;
+    color:black;
+}
+.menu-right2{
+    display: inline-block;
+    float:right;
+    color:black;
+}
+.menu-right3{
+    display: inline-block;
+    float:right;
+    color:black;
+}
+.menu-right4{
+    display: inline-block;
+    float:right;
+    color:black;
+}
+.menu-right5{
+    display: inline-block;
+    float:right;
+    color:black;
+}
+.menu-right6{
+    display: inline-block;
+    float:right;
+    color:black;
+}
+.menu-right7{
+    display: inline-block;
+    float:right;
+    color:black;
+}
+.menu-right-bold{
+     display: inline-block; 
+     float:right; 
+     font-weight: bold;
+}
+.menu-left{
+    display: inline-block;
+    float:left;
+    color:black;
+}
+.menu-left1{
+    display: inline-block;
+    float:left;
+    color:black;
+}
+.menu-left2{
+    display: inline-block;
+    float:left;
+    color:black;
+}
+.menu-left3{
+    display: inline-block;
+    float:left;
+    color:black;
+}
+.menu-left4{
+    display: inline-block;
+    float:left;
+    color:black;
+}
+.menu-left5{
+    display: inline-block;
+    float:left;
+    color:black;
+}
+.menu-left6{
+    display: inline-block;
+    float:left;
+    color:black;
+}
+.menu-left7{
+    display: inline-block;
+    float:left;
+    color:black;
+}
+.menu-left-bold{
+     display: inline-block; 
+     float:left; 
+     font-weight: bold;
+}
+.menu-pic{
+    vertical-align: middle; 
+    display:inline-block; 
+    margin-left: -30%;
+    margin-top:5%;
+    
+}
+.bf-spe{
+    width:100%;
+    margin-left:10%;
+   
+}
+.l-inblock{
+    display:inline-block;
+}
+.r-inblock{
+    vertical-align: middle; 
+    display:inline-block; 
+    float: right; 
+    margin-left: -20%;
+}
+.line-h{
+    font-size: 200%;
+    line-height: 250%;
+    
+}
+	</style>
+	<link href="image/bflogo.png" rel="icon" />
+	<title>Blue &amp; Fly Asian Kitchen</title>
+</head>
+<body>
+<div class="bf-top">
+<div class="bf-bar bf-left bf-padding bf-card" style="letter-spacing:4px; background-color: white;"><a href="index.html"><img class="bf-bar-item" height="43px;" src="image/blueFly_White.jpg" width="54px;" /> </a> <a class="bf-bar-item bf-button" href="index.html">Blue &amp; Fly Asian Kitchen</a>
+<div class="bf-right bf-hide-small">
+
+    <a class="bf-bar-item bf-button" href="#about">About Blue &amp; Fly </a> 
+    <a class="bf-bar-item bf-button" href="#menu">Menu</a> 
+    <a class="bf-bar-item bf-button" href="#contact">Contact Us </a></div>
+</div>
+</div>
+<!-- Page content -->
+
+<header class="bf-display-container bf-content bf-wide" id="home;" style="max-width:100%; margin-top: 54px;">
+<div class="mySlides fade">
+<div class="numbertext"></div>
+<a href="https://www.omaha.com/entertainment/review-new-chinese-restaurant-blue-fly-holds-lots-of-the/article_52355b22-7351-53d9-87d4-8fc7a56035cf.html" target="_blank"><img src="image/Title_cover.png" style="width:100%;height: 100%;" /> </a>
+
+<div class="text">
+<h4>Publisher: Omaha World Herald</h4>
+</div>
+
+<div class="dot"></div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext"></div>
+<a href="https://omahamagazine.com/articles/tag/blue-and-fly-asian-kitchen/" target="_blank"><img src="image/Title_cover2.jpg" style="width:100%; height: 80%;" /> </a>
+
+<div class="text">
+<h4>Publisher: Omaha Magazine</h4>
+</div>
+
+<div class="dot"></div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext"></div>
+<a href="https://www.thedailymeal.com/eat/best-chinese-restaurant-every-state-gallery/slide-27" target="_blank"><img src="image/Title_cover1.jpg" style="width:100%;" /> </a>
+
+<div class="text" style="margin-top: 2%;">
+<h4>Publisher: The Daily Meal</h4>
+</div>
+
+<div class="dot"></div>
+</div>
+<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+  	var i;
+  	var slides = document.getElementsByClassName("mySlides");
+  	var dots = document.getElementsByClassName("dot");
+  	for (i = 0; i < slides.length; i++) {
+  	  slides[i].style.display = "none";  
+  	}
+  	slideIndex++;
+  	if (slideIndex > slides.length) {slideIndex = 1}    
+  	for (i = 0; i < dots.length; i++) {
+  	  dots[i].className = dots[i].className.replace(" active", "");
+ 	}
+  	slides[slideIndex-1].style.display = "block";  
+  	dots[slideIndex-1].className += " active";
+  	setTimeout(showSlides, 5000); // Change image every 5 seconds
+	}	
+	</script></header>
+
+<div class="bf-content" style="max-width:80%; margin-top: 5%;">
+<div class="bf-center" id="about">
+<div class="bf-padding-large" style="margin-top: 8%;"><a class="TButton" href="Aboutus.html">About Blue & Fly </a></div>
+</div>
+</div>
+
+<div class="bf-large">
+<div class="bf-center" id="about"><a href="Aboutus.html"><img alt="Table Setting" class="bf-round" height="100%" src="image/Sotre.jpg" width="100%" /> </a><br />
+&nbsp;</div>
+</div>
+
+
+<div class="bf-content"  style="max-width:80%; margin-top: 5%;"><!-- Menu Section -->
+<div class="bf-center" id="menu"  style="margin-top: 10%;"><a class="TButton" href="Menu.html">Our Menu </a><br />
+
+<div class="bf-col m6 l-inblock"><br>
+
+<a class="TButton" href="Menu.html">
+<h4 class="menu-left-bold">American Style</h4>
+<br><br>
+
+<h4 class="menu-left1">Appetizers</h4>
+<br><br>
+
+<h4 class="menu-left2">Starters </h4>
+<br><br>
+
+<h4 class="menu-left3">Entrees </h4>
+<br><br>
+
+<h4 class="menu-left4">B&F's Favorites</h4>
+<br><br>
+
+<h4 class="menu-left5">B&F's Old Fashions</h4>
+<br><br>
+
+<h4 class="menu-left6">Vegetarian </h4>
+<br><br>
+
+<h4 class="menu-left7">Dessert(limited offer)</h4>
+</a>
+</div>
+
+<div class="bf-col l6 menu-pic"><a href="Menu.html"><img alt="Menu" class="bf-spe bf-opacity-min" id="rcorners"  src="image/SZY1.jpg" /><br />
+<br />
+<img alt="Menu" class="bf-spe bf-opacity-min" id="rcorners" src="image/SZY2.jpg" /> </a></div>
+
+<div class="bf-col m6 r-inblock"> <br>
+<a href="Menu.html" class="TButton"> 
+<h4 class="menu-right-bold">Traditional Style</h4>
+<br><br>
+
+<h4 class="menu-right1">Appetizers(Salad) </h4>
+<br><br>
+
+<h4 class="menu-right2">Soup</h4>
+<br><br>
+
+<h4 class="menu-right3">Vegetable</h4>
+<br><br>
+
+<h4 class="menu-right4">Beef,Pork,Chicken,Lamb</h4>
+<br><br>
+
+<h4 class="menu-right5">Seafood</h4>
+<br><br>
+
+<h4 class="menu-right6">Casserole,Noodle,Rice </h4>
+<br>
+<br>
+</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="bf-content">
+    <div class="bf-center bf-row">
+    <div class="bf-col m6 bf-contact" style="margin-top: 20%;" width="80%"><a href="https://www.google.com/maps/place/Blue+%26+Fly+Asian+Kitchen/@41.2533317,-96.0226319,15z/data=!4m5!3m4!1s0x0:0x3dff7a3c222ec308!8m2!3d41.2533317!4d-96.0226319" target="_blank"><img alt="Table Setting"  id="rcorners" src="image/Address.jpg" class="bf-opacity-min" width="100%"/> </a></div>
+
+    <div class="bf-col m6 bf-padding-large bf-center"  id="contact" style="margin-top: 10%;"><br />
+    <br>
+    <a class="TButton" href="https://www.google.com/maps/place/Blue+%26+Fly+Asian+Kitchen/@41.2533317,-96.0226319,15z/data=!4m5!3m4!1s0x0:0x3dff7a3c222ec308!8m2!3d41.2533317!4d-96.0226319">
+        Opening Hours &amp; Stay Connected </a>
+    <br><br>
+    <div class="line-h" style="color:black;">
+        
+    <span >Mon: Closed</span>
+    <br>
+    <span>Tue-Thu: 11am ~ 10pm</span>
+    <br>
+    <span >Fri-Sat: 11am ~ 10:30pm</span>
+    <br>
+
+    <span>Sun: 12pm ~ 10pm</span>
+    <br>
+    <span >Holiday Opening Hours are flexible</span>
+    <br>
+    </div>
+    <br><br>
+    <a class="Button" href="https://www.google.com/maps/place/Blue+%26+Fly+Asian+Kitchen/@41.2533317,-96.0226319,15z/data=!4m5!3m4!1s0x0:0x3dff7a3c222ec308!8m2!3d41.2533317!4d-96.0226319" target="_blank">Driving Address, 721 S 72nd St suite 111, Omaha, NE, 68114 </a><br />
+    <a class="Button" href="tel:402-504-6545">You can also contact us by cellphone number 402-504-6545</a><br />
+    <a class="Hour" href="https://www.facebook.com/BlueandFly" target="_blank"><img alt="facebook icon" height="15%" src="image/facebook.png" width="15%" /> FaceBook </a><br />
+    <a class="Hour" href="https://www.yelp.com/biz/blue-and-fly-asian-kitchen-omaha?osq=blue+and+fly" target="_blank"><img alt="yelp!" height="10%" src="image/yelp2.png" width="10%" /> Yelp! </a></div>
+    </div>
+</div>
+
+<!-- Footer -->
+
+<footer class="bf-center bf-padding-64" style="margin-top:;"><b style="font-size: 20px;"><i>&copy;Founded in 2015 Blue &amp; Fly HomePage Copyright</i></b></footer>
+
+<p>Dine in carry out delivery private room catering alcohol spirite best Omaha best Nebraska best NE delicious resturant awesome resturant fabulous resturant good resturant close to uno close to Nebraska furniture mart question a b c d e f g h i j k l m n o p q r s t u v w x y z party room favorite nice great</p>
+
+</body>
+</html>
